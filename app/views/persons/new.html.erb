@@ -1,0 +1,27 @@
+
+<%= form_with scope: :person, url: persons_path, remote: true do |form| %>
+<div id="new-employee">
+  <p>
+    <%= form.label :First_Name %><br>
+    <%= form.text_field :firstname, class:"new-firstname"%>
+  </p>
+ 
+  <p>
+    <%= form.label :Last_Name %><br>
+    <%= form.text_field :lastname %>
+  </p>
+  
+   <p>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
+  </p>
+
+   <p>
+    <%= form.label :department %><br>
+    <%= form.text_field :department %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+</div>
+<% end %>
